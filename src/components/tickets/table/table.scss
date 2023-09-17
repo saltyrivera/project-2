@@ -1,0 +1,39 @@
+.table-wrapper {
+    border: 1px solid black;
+    max-width: 275px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    &__left-cell {
+        max-width: 100px;
+        width: 100%;
+        min-height: 50px;
+        border: 1px solid #7B7B7B;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__left-cell p{
+        font-size: 20px;
+        font-family: Montserrat-Regular;
+        color: #000;
+    }
+
+    &__right-cell {
+        width: 100%;
+        min-height: 50px;
+        border: 1px solid #7B7B7B;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__right-cell p{
+        font-size: 16px;
+        font-family: Montserrat-Light;
+        color: #000;
+        text-align: center;
+    }
+}

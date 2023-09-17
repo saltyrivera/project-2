@@ -1,0 +1,125 @@
+h1, h2, p, img, ul, li {
+    margin: 0;
+}
+
+
+.secondblock {
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+
+    &__title {
+        font-family: Montserrat-Light;
+        font-size: 40px;
+        color: #54488A;
+        
+
+        @media(max-width: 650px) {
+            font-size: 20px;
+            width: auto;
+            padding: 20px 20px 0 15px;
+        }
+    }
+
+    &__wrapper img {
+        max-width: 418px;
+        width: 35%;
+        height: 100%;
+
+        @media(max-width: 650px) {
+            width: 100%;
+            padding: 0 25px 0 0;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+        height: 100%;
+
+        @media(max-width: 650px) {
+            flex-direction: column-reverse;
+        }
+
+        &__text p {
+            margin-top: 30px;
+            height: 100%;
+        }
+
+        &__text {
+            font-family: Montserrat-Regular;
+            font-size: 16px;
+            color: #000;
+            max-width: 810px;
+            height: 100%;
+            padding-right: 10px;
+
+            @media(max-width: 650px) {
+                padding-right: 20px;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    &__cards {
+        display: flex;
+        list-style-type: none;
+        width: 100%;
+        max-width: 1150px;
+        height: 100%;
+        max-height: 200px;
+        padding: 0;
+
+        @media(max-width: 650px) {
+            align-items: center;
+            flex-direction: column;
+            box-sizing: border-box;
+            padding: 0 20px 0 15px;
+            margin-top: 20px;
+            max-height: 700px;
+        }
+        
+
+        &__card img {
+            width: 72px;
+            height: 72px;
+        }
+
+        &__card {
+            width: 100%;
+            max-width: 280px;
+            height: 150px;
+            border: 0.5px solid rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 10px;
+            padding: 5px 5px 10px 20px;
+            box-sizing: border-box;
+
+            @media(max-width: 650px) {
+                margin-bottom: 10px;
+                max-width: 100%;
+            }
+
+            &__text {
+                font-family: Montserrat-Light;
+                font-size: 14px;
+                color: #000;
+                max-width: 195px;
+                height: 100%;
+
+                @media(max-width: 650px) {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

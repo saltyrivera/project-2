@@ -1,0 +1,125 @@
+h2, p, th, tr, td{
+    margin: 0;
+    padding: 0;
+}
+
+.thirdblock {
+    min-height: 900px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    &__title {
+        font-size: 32px;
+        font-family: Montserrat-Regular;
+        color: #4C4082;
+        max-width: 1055px;
+        text-align: center;
+
+        @media(max-width: 650px) {
+            font-size: 20px;
+            margin: 0 15px 0 5px;
+        }
+    }
+
+    &__tablewrapper {
+        max-width: 1100px;
+        width: 100%;
+        min-height: 340px;
+        
+
+        @media(max-width: 650px) {
+            margin: 5vw 25px 0 5px;
+        }
+    }
+
+    &__table.two {
+        margin-top: 0;
+    }
+
+    &__table {
+        font-family: Montserrat-Regular;
+        font-size: 15px;
+        margin-top: 5vw;
+        border-collapse: collapse;
+        width: 100%;
+        height: 340px;
+        border: 1px solid #D2D0D6;
+
+        @media(max-width: 650px) {
+            font-size: 10px;
+        }
+
+        &__avatarblock img{
+            width: 10vw;
+            height: 10vw;
+            padding-left: 1vw;
+        }
+
+        &__avatarblock {
+            font-family: Montserrat-Medium;
+            width: 8vw;
+            font-size: 15px;
+
+            @media(max-width: 650px) {
+                font-size: 10px;
+                padding-left: 10px;
+            }
+        }
+    }
+    
+    &__table td {
+        border: 1px solid #D2D0D6;
+        text-align: center;
+    }
+
+    &__table tr th{
+        border: 1px solid #D2D0D6;
+        height: 40px;
+        background-color: #B3B3B3;
+    }
+
+    &__learn {
+        margin-top: 5vw;
+        max-width: 1100px;
+        width: 100%;
+        background-color: #4C4082;
+        min-height: 250px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 4vw;
+        box-sizing: border-box;
+        justify-content: center;
+
+        @media(max-width: 650px) {
+            padding: 0 25px 0 5px;
+        }
+       
+
+        &__title {
+            font-size: 40px;
+            font-family: Montserrat-Light;
+            color: #E6E6E4;
+
+            @media(max-width: 650px) {
+                font-size: 25px;
+            }
+        }
+
+        &__text {
+            font-size: 20px;
+            font-family: Montserrat-Light;
+            color: #E6E6E4;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            max-width: 800px;
+
+            @media(max-width: 650px) {
+                font-size: 15px;
+            }
+        }
+    }
+}

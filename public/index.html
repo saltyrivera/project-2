@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>React App</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f21843de-9567-4b50-8c01-35db4596e5c4" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init(){
+            var myMap = new ymaps.Map("map", {
+              center: [56.289028, 44.063395],
+              zoom: 17});
+            
+
+          var myGeoObject = new ymaps.GeoObject({
+          geometry: {
+              type: "Point",
+              coordinates: [56.288987, 44.067374]
+          }
+          });
+
+          var myPlacemark = new ymaps.Placemark([56.288987, 44.067374], {}, {
+              iconLayout: 'default#image',
+              iconImageHref: './market-icon.png',
+              iconImageSize: [100, 100],
+              iconImageOffset: [-60, -42]
+          });
+          myMap.geoObjects.add(myPlacemark);
+          myMap.behaviors.disable('scrollZoom');
+          }
+  </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

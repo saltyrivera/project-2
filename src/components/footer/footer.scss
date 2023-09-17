@@ -1,0 +1,115 @@
+p, ul, a {
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.footer {
+    min-height: 300px;
+    display: flex;
+    background-image: url('../../img/texture.jpg');
+    background-size: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+
+    @media(max-width: 700px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media(max-width: 350px) {
+        align-items: flex-start;
+    }
+
+    &__privacy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: 0.5s;
+
+        @media(max-width:700px) {
+            flex-direction: row;
+        }
+
+        @media(max-width: 450px) {
+            // max-width: 260px;
+            padding-right: 5px;
+        }
+
+
+        &__text {
+            font-family: Montserrat-Regular;
+            font-size: 11px;
+            color: #fff;
+            max-width: 140px;
+            margin-top: 10px;
+        }
+    }
+
+    &__privacy img{
+        width: 142px;
+    }
+
+    &__nav {
+        transition: 0.5s;
+        @media(max-width: 700px) {
+            margin-top: 20px;
+            margin-right: 55px;
+        }
+
+        @media(max-width: 350px) {
+            margin-right: 0;
+        }
+    }
+
+    &__nav li{
+        font-family: Montserrat-SemiBold;
+        font-size: 20px;
+        color: #fff;
+        margin-top: 10px;
+        transition: 0.2s;
+    }
+
+
+    &__nav li:hover{
+        color: #8a8a8a;
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transition: 0.5s;
+
+        @media(max-width: 700px) {
+            margin-top: 20px;
+        }
+
+        &__whatsapp {
+            font-family: Montserrat-ExtraLight;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            &__number {
+                color: #fff;
+                margin-left: 10px;
+                margin-bottom: 5px;
+            }
+        }
+
+        &__icons {
+            margin-top: 50px;
+            transition: 0.5s;
+
+            @media(max-width: 700px) {
+                margin-top: 30px;
+            }
+        }
+
+        &__icons a {
+            margin-right: 50px;
+        }
+    }
+}
