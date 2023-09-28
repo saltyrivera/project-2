@@ -17,7 +17,10 @@ const MainPage = () => {
         <WelcomeBlock/>
         <SecondBlock/>
         <ThirdBlock/>
-        <FourBlock/>
+        <FourBlock 
+            img1={'https://catherineasquithgallery.com/uploads/posts/2021-03/1614680816_59-p-fon-fekhtovanie-65.jpg'} text1={'любой текст'} date1={'любая дата'}
+            img2={'https://catherineasquithgallery.com/uploads/posts/2021-03/1614680816_59-p-fon-fekhtovanie-65.jpg'} text2={'любой текст'} date2={'любая дата'}
+        />
         <FiveBlock/>
         <Footer/>
         </>

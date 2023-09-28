@@ -23,6 +23,7 @@ h1,h2,p,a {
         right: 30px;
         bottom: 30px;
         transition: 0.5s;
+        max-width: 430px;
 
         @media(max-width: 700px) {
             right: 0;
@@ -44,6 +45,9 @@ h1,h2,p,a {
             "a b"
             "c c";
         transition: 0.5s;
+        grid-template-rows: 1fr 0.2fr;
+        grid-template-columns: 1fr 1.4fr;
+        
 
         @media(max-width: 700px) {
             grid-template-areas: 
@@ -51,6 +55,8 @@ h1,h2,p,a {
             "b"
             "c";
             justify-items: center;
+            grid-template-rows: none;
+            grid-template-columns: none;
         }
 
         &__content {
@@ -59,12 +65,21 @@ h1,h2,p,a {
             justify-content: center;
             grid-area: b;
 
+            @media(max-width: 600px) {
+                margin-left: 10px;
+                padding-right: 10px;
+            }
+
             &__textblock {
                 display: flex;
                 flex-direction: column;
                 min-height: 150px;
                 justify-content: space-around;
                 max-width: 600px;
+
+                @media(max-width: 700px) {
+                    align-items: center;
+                }
 
                 &__title {
                     font-family: Montserrat-Medium;

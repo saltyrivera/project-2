@@ -51,22 +51,24 @@ h2, p, th, tr, td{
 
         @media(max-width: 650px) {
             font-size: 10px;
+            height: 300px;
         }
 
         &__avatarblock img{
             width: 10vw;
-            height: 10vw;
             padding-left: 1vw;
         }
 
+
         &__avatarblock {
             font-family: Montserrat-Medium;
-            width: 8vw;
             font-size: 15px;
+            width: 10vw;
 
             @media(max-width: 650px) {
-                font-size: 10px;
+                font-size: 8px;
                 padding-left: 10px;
+                height: 300px;
             }
         }
     }
@@ -74,6 +76,8 @@ h2, p, th, tr, td{
     &__table td {
         border: 1px solid #D2D0D6;
         text-align: center;
+        height: 50%;
+        width: 10%;
     }
 
     &__table tr th{

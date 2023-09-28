@@ -1,17 +1,16 @@
 import React from "react";
-import ImgNewsOne from '../../img/news-one.png';
 import './fourblock.scss';
 
-const FourBlock = () => {
+const FourBlock = ({text1, text2, img1, img2, date1, date2}) => {
     return (
         <div className="fourblock" id='news'>
             <h2 className="fourblock__title">НОВОСТИ</h2>
             <div className="fourblock__news">   
-                <img src={ImgNewsOne} alt=''></img>
+                <img src={img1} alt=''></img>
                 <div className="fourblock__news__content">
                     <div className="fourblock__news__content__textblock">
-                        <h2 className="fourblock__news__content__textblock__title">В нашем центре Тушино прошёл открытый турнир Центра фехтования Ильгара Мамедова по фехтованию на шпагах среди девочек 2011-2013 г. р.</h2>
-                        <p className="fourblock__news__content__textblock__time">29 января 2023 года</p>
+                        <h2 className="fourblock__news__content__textblock__title">{text1}</h2>
+                        <p className="fourblock__news__content__textblock__time">{date1}</p>
                     </div>
                 </div>
                 <div className="fourblock__news__block">
@@ -19,11 +18,11 @@ const FourBlock = () => {
                 </div>
             </div>
             <div className="fourblock__news two">   
-                <img src={ImgNewsOne} alt=''></img>
+                <img src={img2} alt=''></img>
                 <div className="fourblock__news__content">
                     <div className="fourblock__news__content__textblock">
-                        <h2 className="fourblock__news__content__textblock__title">В нашем центре Тушино прошёл открытый турнир Центра фехтования Ильгара Мамедова по фехтованию на шпагах среди девочек 2011-2013 г. р.</h2>
-                        <p className="fourblock__news__content__textblock__time">29 января 2023 года</p>
+                        <h2 className="fourblock__news__content__textblock__title">{text2}</h2>
+                        <p className="fourblock__news__content__textblock__time">{date2}</p>
                     </div>
                 </div>
                 <div className="fourblock__news__block">

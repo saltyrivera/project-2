@@ -4,6 +4,7 @@ import WhatsappIcon from '../../img/whatsapp-icon.svg';
 import VkIcon from '../../img/vk-icon.svg';
 import TelegramIcon from '../../img/telegram-icon.svg';
 import ViberIcon from '../../img/viber-icon.svg';
+import {Link} from 'react-router-dom';
 import './footer.scss';
 
 const Footer = () => {
@@ -15,11 +16,11 @@ const Footer = () => {
             </div>
             <div className="footer__nav">
                 <ul className="footer__nav__ul">
-                    <a href='#schedule'><li>Расписание</li></a>
-                    <a href='#'><li>Абонементы</li></a>
-                    <a href='#news'><li>Новости</li></a>
-                    <a href='#'><li>Фотографии</li></a>
-                    <a href='#contacts'><li>Контакты</li></a>
+                    <li><Link to={`/#schedule`}>Расписание</Link></li>
+                    <li><Link to={`/tickets`}>Абонементы</Link></li>
+                    <li><Link to={`/#news`}>Новости</Link></li>
+                    <li><Link to={`/`}>Фотографии</Link></li>
+                    <li><Link to={`/#contacts`}>Контакты</Link></li>
                 </ul>
             </div>
             <div className="footer__contact">

@@ -1,6 +1,7 @@
 import React from "react";
 import './fiveblock.scss';
 import VkIcon from '../../img/vk-icon.svg';
+import { YMaps, Map, Placemark,} from '@pbe/react-yandex-maps';
 
 const FiveBlock = () => {
     return (
@@ -20,7 +21,31 @@ const FiveBlock = () => {
                     </a>
                 </div>
             </div>
-            <div className="map" id='map' style={{width: '100%', height: '100%'}}></div>
+            <YMaps>
+                <Map
+                    instanceRef={ref => { ref && ref.behaviors.disable('scrollZoom'); }}
+                    width={'100%'}
+                    height={'100%'}
+                    defaultState={{
+                    center: [56.289028, 44.063395],
+                    zoom: 17,
+                    controls: ["zoomControl", "fullscreenControl"],
+                    }}
+                    modules={["control.ZoomControl", "control.FullscreenControl"]}
+                    
+                >
+                    <Placemark
+                    options={{
+                        iconLayout: 'default#image',
+                        iconImageHref: './market-icon.png',
+                        iconImageSize: [100, 100],
+                        iconImageOffset: [-60, -42]
+                    }}
+                    modules={["geoObject.addon.balloon"]}
+                    defaultGeometry={[56.288987, 44.067374]}
+                    />
+                </Map>
+            </YMaps>
         </div>
     )
 }
