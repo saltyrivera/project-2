@@ -2,6 +2,7 @@ import React from "react";
 import './app.scss';
 import WelcomeBlock from "../welcomeblock/welcomeBlock";
 import SecondBlock from "../secondblock/secondblock";
+import Services from "../services/services";
 import ThirdBlock from "../thirdblock/thirdblock";
 import FAQ from '../faq/faq';
 import FourBlock from "../fourblock/fourblock";
@@ -24,6 +25,7 @@ const MainPage = () => {
         <>
         <WelcomeBlock/>
         <SecondBlock/>
+        <Services/>
         <ThirdBlock/>
         <FAQ/>
         <FourBlock 

@@ -9,7 +9,7 @@ h1, h2, p, img, ul, li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
     &__title {
         font-family: Montserrat-Light;

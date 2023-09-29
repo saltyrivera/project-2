@@ -1,0 +1,103 @@
+.service-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        text-align: center;
+        font-family: Montserrat-Regular;
+        font-size: 40px;
+    }
+
+    &__text {
+        font-family: Montserrat-Regular;
+        font-size: 18px;
+        max-width: 1000px;
+        margin-top: 50px;
+    }
+
+    &__card-wrapper {
+        max-width: 1000px;
+        width: 100%;
+        display: flex;
+        margin-top: 100px;
+        height: 100%;
+
+        &__main-card {
+            max-width: 450px;
+            width: 100%;
+            background-color: rgba(84, 72, 138, 0.95);
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 3%;
+            transition: .5s;
+
+            &__img {
+                height: 35%;
+                width: 100%;
+                background-size: cover;
+                border-radius: 6% 6% 0 0;
+                transition: .5s;
+                background-color: rgba(0, 0, 0, 0);
+                background-blend-mode: multiply;
+            }
+
+            &__img:hover {
+                background-color: rgba(0, 0, 0, 0.05);
+            }
+
+            &__title {
+                font-family: Montserrat-Medium;
+                color: #fff;
+                font-size: 20px;
+                margin-left: 15px;
+                margin-top: 50px;
+            }
+
+            &__text {
+                font-family: Montserrat-Regular;
+                color: #fff;
+                font-size: 15px;
+                margin-left: 15px;
+                max-width: 400px;
+                margin-top: 50px;
+            }
+        }
+
+        &__main-card .button {
+            margin-top: 50px;
+            margin-left: 15px;
+        }
+
+        &__main-card:hover {
+            background-color: rgba(84, 72, 138, 1);
+        }
+
+        &__mini-card {
+            width: 250px;
+            margin-left: 25px;
+            background-size: cover;
+            height: 300px;
+            border-radius: 3%;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-blend-mode: multiply;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            transition: .5s;
+            cursor: pointer;
+
+            &__text {
+                font-family: Montserrat-Light;
+                color: #fff;
+                text-align: center;
+                margin-bottom: 20px;
+                max-width: 90%;
+            }
+        }
+        &__mini-card:hover {
+            background-color: rgba(0, 0, 0, 0);
+        }
+    }
+}
