@@ -9,7 +9,7 @@ import img from '../../img/secondblock-image.png';
 const SecondBlock = () => {
     return (
         <div className="secondblock">
-            <h2 className="secondblock__title">О ЦЕНТРЕ ФЕХТОВАНИЯ</h2>
+            <h2 className="secondblock__title">О ШКОЛЕ ФЕХТОВАНИЯ</h2>
             <div className="secondblock__wrapper">
                 <p className="secondblock__wrapper__text">Наш клуб официально зарегистрирован в федерации фехтования, это дает возможность нашим спортсменам:</p>
                 <img src={img} alt=''></img>
@@ -25,7 +25,7 @@ const SecondBlock = () => {
                 </li>
                 <li className="secondblock__cards__card">
                     <img src={imgThree} alt=''></img>
-                    <p className="secondblock__cards__card__text">Входить во всероссийскую систему отбора</p>
+                    <p className="secondblock__cards__card__text">Предоставляем экипировку</p>
                 </li>
                 <li className="secondblock__cards__card">
                     <img src={imgFour} alt=''></img>

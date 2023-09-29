@@ -12,12 +12,13 @@ const Footer = () => {
         <div className="footer">
             <div className="footer__privacy">
                 <img src={Title} alt=''></img>
-                <p className="footer__privacy__text">© 2022 ООО «Центр Фехтования Ильгара Мамедова» | Все права защищены</p>
+                <p className="footer__privacy__text">© 2023 ООО «Школа Фехтования "Горький"» | Все права защищены</p>
             </div>
             <div className="footer__nav">
                 <ul className="footer__nav__ul">
                     <li><Link to={`/#schedule`}>Расписание</Link></li>
                     <li><Link to={`/tickets`}>Абонементы</Link></li>
+                    <li><Link to={`/#faq`}>Частые вопросы</Link></li>
                     <li><Link to={`/#news`}>Новости</Link></li>
                     <li><Link to={`/`}>Фотографии</Link></li>
                     <li><Link to={`/#contacts`}>Контакты</Link></li>

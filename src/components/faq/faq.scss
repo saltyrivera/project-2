@@ -1,0 +1,36 @@
+.faq {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+    &__title {
+        font-family: Montserrat-Regular;
+        font-size: 40px;
+        text-align: center;
+        color: #4C4082;
+
+        @media(max-width: 750px) {
+            transition: all .2s;
+            font-size: 20px;
+        }
+    }
+
+    &__sec {
+        margin-top: 100px;
+        display: grid;
+        grid-template-areas: 
+        "a b";
+
+        @media(max-width: 750px) {
+            transition: all .2s;
+            margin-top: 30px;
+        }
+
+        @media(max-width: 350px) {
+            transition: all .2s;
+            margin-right: 20px;
+        }
+    }
+}

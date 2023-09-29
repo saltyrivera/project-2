@@ -15,6 +15,7 @@
 
         @media(max-width: 500px) {
             display: grid;
+            margin-bottom: 10px;
         }
 
         &__li {
@@ -28,13 +29,13 @@
 
         &__li a {
             font-family: Montserrat-SemiBold;
-            font-size: 20px;
+            font-size: 19px;
             text-decoration: none;
             color: #000000;
             transition: 0.2s;
 
             @media(max-width: 650px) {
-                font-size: 15px;
+                font-size: 14px;
             }
 
         }

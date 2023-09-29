@@ -11,7 +11,7 @@ const FiveBlock = () => {
                 <p className="fiveblock__block__secondarytitle">Телефон:</p>
                 <p className="fiveblock__block__text">+7 (964) 836-15-55</p>
                 <p className="fiveblock__block__secondarytitle">Адрес:</p>
-                <p className="fiveblock__block__text">603087, Нижегородская область, г. Нижний Новгород. мкрн. Верхние-Печеры. ул. Верхне-Печерская 7Б, этаж 1</p>
+                <p className="fiveblock__block__text">603087, Нижегородская область, г. Нижний Новгород. мкрн. Верхние-Печеры. ул. Верхне-Печерская 7Б, этаж 1, напротив батутного центра "Прыгалки"</p>
                 <div className="fiveblock__block__vkblock">
                     <a href='https://vk.com/fk_nnov'>
                         <img src={VkIcon} alt=''></img>

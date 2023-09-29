@@ -84,11 +84,36 @@ h1,h2,p,a {
                 &__title {
                     font-family: Montserrat-Medium;
                     font-size: 18px;
+
+                    @media(max-width: 700px) {
+                        text-align: center;
+                    }
+
+                    @media(max-width: 400px) {
+                        margin-top: 10px;
+                    }
+                }
+
+                &__text {
+                    font-family: Montserrat-Medium;
+                    font-size: 16px;
+
+                    @media(max-width: 700px) {
+                        text-align: center;
+                    }
+
+                    @media(max-width: 400px) {
+                        margin-top: 10px;
+                    }
                 }
 
                 &__time {
                     font-family: Montserrat-Light;
                     font-size: 14px;
+
+                    @media(max-width: 400px) {
+                        margin-top: 10px;
+                    }
                 }
             }
         }
